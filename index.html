@@ -1,53 +1,320 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license.
+Although you can use them, for a more unique website, replace these images with your own. -->
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta property="og:title" content="John Grosh">
-    <meta property="og:image" content="http://i.imgur.com/DwZZBtu.png">
-    <meta property="og:description" content="How do meta tags work again?">
-    <title>Jagrosh by jagrosh</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>jagrosh</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Jagrosh</h1>
-        <p>I fixed a bug once</p>
-        <p class="view"><a href="https://github.com/jagrosh">View the Project on GitHub <small>jagrosh</small></a></p>
-        <ul>
-          <li class="single"><a href="https://github.com/jagrosh/jagrosh.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h2>
-<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome</h2>
 
-<p>Hi!</p>
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<h2>
-<a id="discord" class="anchor" href="#discord" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Discord</h2>
+</head>
 
-<p>I've worked on many projects on discord including <a href="https://github.com/jagrosh/Spectra">an all-around utility bot</a>, an <a href="https://github.com/jagrosh/Vortex">auto-moderator bot</a>, a <a href="https://github.com/jagrosh/Spectra-Music">downloadable music bot</a>, and a <a href="https://github.com/jagrosh/FrostCleverbot">simple cleverbot</a>, among other things. </p>
+<body>
 
-<h2>
-<a id="other-projects" class="anchor" href="#other-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Projects</h2>
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon-fire"></span>
+                	LOGO
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="#Spectra">Spectra</a></li>
+							<li><a href="#Vortex">Vortex</a></li>
+							<li><a href="#Yggdrasil">Yggdrasil</a></li>
+              <li><a href="#Frost">Frost Cleverbot</a></li>
+              <li><a href="#Musicbot">JMusicBot</a></li>
+              <li><a href="#Selfbot">JSelfBot</a></li>
+              <li><a href="#Floppy">💾❗</a></li>
+              <li><a href="#DADCo">DADCo</a></li>
+						</ul>
+					</li>
+                    <li>
+                        <a href="https://github.com/jagrosh">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://discordapp.com/invite/0p9LSGoRLu6Pet0k">Discord</a>
+                    </li>
+                    <li>
+                        <a href="mailto:john.a.grosh@gmail.com">E-Mail</a>
+                    </li>
+                </ul>
 
-<p>I've developed a <a href="https://github.com/jagrosh/JagTag">small text-parsing language</a> that can be easily expanded.</p>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>John A. Grosh</h1>
+                <p><b>Java Dev</b> | <b>Discord Bot Dev</b> | <b>Android Dev</b></p>
+            </div>
+        </div>
+    </header>
+
+	<!-- Intro Section-->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                	<span class="glyphicon glyphicon-pencil" style="font-size: 60px"></span>
+                    <h2 class="section-heading">Projects</h2>
+                    <p class="text-light">From Discord bot development to writing an Android app for an electromiography watch, I do a lot of programming and algorithm design. Below are just some of the projects that I maintain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Spectra -->
+    <a class="anchor" id="Spectra"></a>
+    <section class="content content-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img-responsive img-circle center-block" src="images/spectra.png" alt="">
+                </div>
+                <div class="col-sm-9">
+                	<h2 class="section-header">Spectra</h2>
+                	<p class="lead text-muted">A mutli-purpose, for-fun and for-utility Discord bot</p>
+                	<a href="https://github.com/jagrosh/Spectra/wiki/Getting-Started" class="btn btn-primary">Wiki</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Vortex -->
+     <a class="anchor" id="Vortex"></a>
+     <section class="content content-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                	<h2 class="section-header">Vortex</h2>
+                	<p class="lead text-muted">Straightforward moderation bot that requires no setup for basic commands</p>
+                	<a href="https://discordapp.com/oauth2/authorize?client_id=240254129333731328&permissions=403041342&scope=bot" class="btn btn-primary">Invite</a>
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-responsive img-circle center-block" src="images/vortex.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yggdrasil -->
+      <a class="anchor" id="Yggdrasil"></a>
+      <section class="content content-light">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <img class="img-responsive img-circle center-block" src="images/yggdrasil.png" alt="">
+                  </div>
+                  <div class="col-sm-9">
+                  	<h2 class="section-header">Yggdrasil</h2>
+                  	<p class="lead text-muted">A bot designed to connect as many Discord servers as possible, bringing fun and entertainment</p>
+                  	<a href="https://discordapp.com/oauth2/authorize?client_id=247283454440374274&permissions=67488832&scope=bot" class="btn btn-primary">Invite</a>
+                  </div>
+              </div>
+          </div>
       </section>
-    </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+
+  	<!-- Frost -->
+       <a class="anchor" id="Frost"></a>
+       <section class="content content-dark">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-9">
+                  	<h2 class="section-header">Frost (Cleverbot)</h2>
+                  	<p class="lead text-muted">An extremely simple Discord Cleverbot</p>
+                  	<a href="https://github.com/jagrosh/FrostCleverbot" class="btn btn-primary">Github</a>
+                    <a href="https://discordapp.com/oauth2/authorize?client_id=197531129434210304&scope=bot&permissions=3072" class="btn btn-primary">Invite</a>
+                  </div>
+                  <div class="col-sm-3">
+                      <img class="img-responsive img-circle center-block" src="images/frost.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- JMusicBot -->
+        <a class="anchor" id="Musicbot"></a>
+        <section class="content content-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="img-responsive img-circle center-block" src="images/clarity.png" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                    	<h2 class="section-header">JMusicBot</h2>
+                    	<p class="lead text-muted">A fast and efficient Discord music bot with a clean interface that is easy to host yourself.</p>
+                    	<a href="https://github.com/jagrosh/MusicBot/wiki/Setup" class="btn btn-primary">Setup</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    	<!-- Selfbot -->
+         <a class="anchor" id="Selfbot"></a>
+         <section class="content content-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                    	<h2 class="section-header">JSelfBot</h2>
+                    	<p class="lead text-muted">A basic Discord selfbot to enhance functionality of your account</p>
+                    	<a href="https://github.com/jagrosh/Selfbot" class="btn btn-primary">Setup</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive img-circle center-block" src="images/clyde.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floppy -->
+          <a class="anchor" id="Floppy"></a>
+          <section class="content content-light">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <img class="img-responsive img-circle center-block" src="images/floppy.png" alt="">
+                      </div>
+                      <div class="col-sm-9">
+                      	<h2 class="section-header">💾❗</h2>
+                      	<p class="lead text-muted">A 💯% emoji bot that's just for fun</p>
+                      	<a href="https://discordapp.com/oauth2/authorize?&client_id=168682538028630017&scope=bot&permissions=117768" class="btn btn-primary">Invite</a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+      	<!-- DADCo -->
+           <a class="anchor" id="DADCo"></a>
+           <section class="content content-dark">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-9">
+                      	<h2 class="section-header">DADCo</h2>
+                      	<p class="lead text-muted">DADCo is a small startup from Rochester, NY, working on bringing electromiography to the consumer market in the form of wearable smart-technology.</p>
+                      	<a href="http://wearedad.co" class="btn btn-primary">Website</a>
+                        <a href="https://discordapp.com/invite/J75N27z " class="btn btn-primary">Discord</a>
+                      </div>
+                      <div class="col-sm-3">
+                          <img class="img-responsive img-circle center-block" src="images/dadco.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+    <!-- Promos
+	<div class="container-fluid">
+        <div class="row promo">
+        	<a href="#">
+				<div class="col-md-4 promo-item item-1">
+					<h3>
+						Unleash
+					</h3>
+				</div>
+            </a>
+            <a href="#">
+				<div class="col-md-4 promo-item item-2">
+					<h3>
+						Synergize
+					</h3>
+				</div>
+            </a>
+
+			<a href="#">
+				<div class="col-md-4 promo-item item-3">
+					<h3>
+						Procrastinate
+					</h3>
+				</div>
+            </a>
+        </div>
+    </div><!-- /.container-fluid
+
+	<!-- Content 3
+     <section class="content content-3">
+        <div class="container">
+			<h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Sanity Check</h2>
+			<p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Check Now</a>
+            </div>
+        </div>
+    </section>-->
+
+	<!-- Footer -->
+    <footer class="page-footer">
+
+    	<!-- Contact Us
+        <div class="contact">
+        	<div class="container">
+				<h2 class="section-heading">Contact</h2>
+				<p>E-mail<br><a href="mailto:john.a.grosh@gmail.com">john.a.grosh@gmail.com</a></p>
+        <p>Discord Server<br><img src="​https://discordapp.com/api/guilds/147698382092238848/widget.png"></p>
+        	</div>
+        </div>-->
+
+        <!-- Copyright etc -->
+        <div class="small-print">
+        	<div class="container">
+        		<p>Copyright &copy; jagrosh.me John A. Grosh 2017</p>
+        	</div>
+        </div>
+
     </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
+</body>
+
 </html>

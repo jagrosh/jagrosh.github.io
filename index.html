@@ -1,345 +1,271 @@
 <!DOCTYPE html>
-<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license.
-Although you can use them, for a more unique website, replace these images with your own. -->
 <html lang="en">
+<!--
 
+Welcome to my website!
+
+
+
+-->
 <head>
-
     <meta charset="utf-8">
-    <meta property="og:title" content="John A. Grosh">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Microsoft tells me Edge ISN'T the same as Internet Explorer though... Hmmmmm -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jagrosh</title>
+    
+    <!-- Gonna be 100% honest here, these meta tags are just to make the embed in Discord look good. -->
+    <meta property="og:title" content="jagrosh's website">
     <meta property="og:image" content="http://i.imgur.com/dB4erDr.png">
-    <meta property="og:description" content="Java Dev | Discord Bot Dev | Android Dev">
+    <meta property="og:description" content="I like making things.">
     <meta property="og:site_name" content="jagrosh">
     <meta property="og:url" content="https://jagrosh.com">
     <meta name="theme-color" content="#8FC73E">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <title>jagrosh</title>
-
-    <!-- Bootstrap Core CSS -->
+    
+    <!-- Ah yes, bootstrap and fontawesome, I too am lazy when it comes to web design -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/fa-svg-with-js.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom Fonts from Google -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <script defer src="js/fontawesome-all.min.js"></script>
 </head>
 
 <body>
-
-    <!-- Navigation -->
+    <!-- Holy moly bootstrap, I get that you're convenient but could you make your names a bit shorter -->
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Actually, considering that I do mostly Java development, this isn't that bad... -->
         <div class="container">
-            <!-- Logo and responsive toggle -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <!-- So wait... this isn't a "hamburger" at all, its really closer to just three slices of bread; a bread sandwich! -->
                 </button>
-                <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-flash"></span>
+                <a class="navbar-brand" href="#"> <!-- To # or not to #... No # and the URL looks cleaner, but # and it doesn't reload the whole page -->
                 	jagrosh
                 </a>
             </div>
-            <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="">Home</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Libraries <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li><a href="#jagtag">JagTag</a></li>
+                            <li><a href="#easysql">EasySQL</a></li>
+                            <li><a href="#discordipc">DiscordIPC</a></li>
+                            <li><a href="#jdautils">JDA-Utilities</a></li>
+                        </ul>
                     </li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-						<ul class="dropdown-menu" aria-labelledby="about-us">
-							<li><a href="#Spectra">Spectra</a></li>
-							<li><a href="#Vortex">Vortex</a></li>
-							<li><a href="#Yggdrasil">Yggdrasil</a></li>
-              <li><a href="#Frost">Frost Cleverbot</a></li>
-              <li><a href="#Musicbot">JMusicBot</a></li>
-              <li><a href="#Selfbot">JSelfBot</a></li>
-              <li><a href="#Floppy">💾❗</a></li>
-              <li><a href="#DADCo">DADCo</a></li>
-              <li><a href="#GiveawayBot">GiveawayBot</a></li>
-						</ul>
-					</li>
-                    <li>
-                        <a href="https://github.com/jagrosh">Github</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Groups <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li><a href="#bcs">Brick City Singers</a></li>
+                            <li><a href="#dadco">DADCo</a></li>
+                            <li><a href="#mhgh">MHGH</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="https://discordapp.com/invite/0p9LSGoRLu6Pet0k">Discord</a>
-                    </li>
-                    <li>
-                        <a href="mailto:john.a.grosh@gmail.com">E-Mail</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Discord Bots <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li><a href="#spectra">Spectra</a></li>
+                            <li><a href="#vortex">Vortex</a></li>
+                            <li><a href="#jmusicbot">JMusicBot</a></li>
+                            <li><a href="#giveawaybot">GiveawayBot</a></li>
+                            <li><a href="#yggdrasil">Yggdrasil</a></li>
+                            <li><a href="#frost">Frost Cleverbot</a></li>
+                            <li><a href="#floppy">💾❗</a></li>
+                            <li><a href="#frost">Courier Felyne</a></li>
+                        </ul>
                     </li>
                 </ul>
-
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
+            </div>
+        </div>
     </nav>
 
-	<!-- Header -->
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
-                <h1>John A. Grosh</h1>
-                <p><b>Java Dev</b> | <b>Discord Bot Dev</b> | <b>Android Dev</b></p>
-            </div>
+            <h1>jagrosh</h1>
+            <!-- Man, fontawesome really makes this a lot easier than hunting down all these logos myself -->
+            <a href="mailto:john.a.grosh@gmail.com" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> E-Mail</a>
+            <a href="https://github.com/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://invite.gg/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-discord"></i> Discord</a>
+            <a href="https://twitter.com/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://twitch.tv/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-twitch"></i> Twitch</a>
+            <a href="https://steamcommunity.com/id/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-steam"></i> Steam</a>
+            <a href="https://youtube.com/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://reddit.com/u/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-reddit"></i> Reddit</a>
+            <a href="https://soundcloud.com/john-a-grosh" class="btn btn-primary btn-lg"><i class="fab fa-soundcloud"></i> SoundCloud</a>
+            <a href="https://paypal.me/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-paypal"></i> PayPal</a>
+            <a href="https://patreon.com/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-patreon"></i> Patreon</a>
+            <!-- [Insert snarky comment about finding extra links in the source code but not caring because the URL would be obvious anyway] -->
+            <!--a href="https://www.linkedin.com/in/jagrosh" class="btn btn-primary btn-lg"><i class="fab fa-linkedin"></i> LinkedIn</a-->
+            <!--a href="https://jagrosh.wordpress.com" class="btn btn-primary btn-lg"><i class="fab fa-wordpress"></i> Blog</a-->
         </div>
     </header>
-
-	<!-- Intro Section-->
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                	<span class="glyphicon glyphicon-pencil" style="font-size: 60px"></span>
-                    <h2 class="section-heading">Projects</h2>
-                    <p class="text-light">From Discord bot development to writing an Android app for an electromiography watch, I do a lot of programming and algorithm design. Below are just some of the projects that I maintain.</p>
-                </div>
-            </div>
+    
+    <center>
+    <div class="projects">
+        <h1><i class="fas fa-user"></i> About Me</h1>
+        <p>Who, me? Well, I like making things. In middle school I made silly games using Game Maker 7, and although I didn't know it at the time, making little scripts for almost-unplayable games would slowly but surely turn into a love of designing things that other people use. Nowadays, I spend most of my free time writing software in various forms for various functions. I really enjoy designing algorithms and discovering efficient or succinct ways to tackle obstacles.</p>
+    
+        <hr>
+        
+        <h1><i class="fab fa-github"></i> Open-Source Libraries</h1>
+        <p>I like making things. I also like making useful things for other people to use.</p>
+        
+        <a class="anchor" id="jagtag"></a>
+        <div class="project">
+            <img src="images/default.png"/>
+            <h2>JagTag</h2>
+            <p>JagTag is a simple (yet powerful and expandable) text-processing language. JagTag started as a (hard-coded) set of text replacements for a chat bot, but continued to expand until I decided to remake the entire thing as a standalone library. JagTag is used within some fairly-popular Discord bots such as Spectra, Yggdrasil, and Laxus.</p>
+            <a href="https://github.com/jagrosh/jagtag" class="btn"><i class="fab fa-github"></i> Source</a>
         </div>
-    </section>
-
-	<!-- Spectra -->
-    <a class="anchor" id="Spectra"></a>
-    <section class="content content-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img class="img-responsive img-circle center-block" src="images/spectra.png" alt="">
-                </div>
-                <div class="col-sm-9">
-                	<h2 class="section-header">Spectra</h2>
-                	<p class="lead text-muted">A mutli-purpose, for-fun and for-utility Discord bot. Spectra has a complex tag system for a plethora of "custom command" capabilities. Additionally, it sports utilities like reminders, announcements, self-assignable roles, afk notifications, and a full moderation suite including logs.</p>
-                	<a href="https://github.com/jagrosh/Spectra/wiki/Getting-Started" class="btn btn-primary">Wiki</a>
-                </div>
-            </div>
+        
+        <a class="anchor" id="easysql"></a>
+        <div class="project">
+            <img src="images/default.png"/>
+            <h2>EasySQL</h2>
+            <p>After writing the same code repeatedly to work with databases (and hating the lack of typing in String-based SQL statements), I wanted to make something that acted as a very thin layer between the developer and JDBC to allow the developer to use typed variables and methods while still boiling down to SQL statements internally.</p>
+            <a href="https://github.com/jagrosh/EasySQL" class="btn"><i class="fab fa-github"></i> Source</a>
         </div>
-    </section>
-
-	<!-- Vortex -->
-     <a class="anchor" id="Vortex"></a>
-     <section class="content content-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9">
-                	<h2 class="section-header">Vortex</h2>
-                	<p class="lead text-muted">Straightforward moderation bot that requires no setup for basic commands. It also has automoderation capabilities that stop common spam techniques and keep the server safe.</p>
-                	<a href="https://github.com/jagrosh/Vortex/wiki" class="btn btn-primary">Wiki</a>
-                </div>
-                <div class="col-sm-3">
-                    <img class="img-responsive img-circle center-block" src="images/vortex.png" alt="">
-                </div>
-            </div>
+        
+        <a class="anchor" id="discordipc"></a>
+        <div class="project">
+            <img src="images/default.png"/>
+            <h2>DiscordIPC</h2>
+            <p>This is a library to communicate with the Discord client in order to utilize Discord's Rich Presence.</p>
+            <a href="https://github.com/jagrosh/DiscordIPC" class="btn"><i class="fab fa-github"></i> Source</a>
         </div>
-    </section>
-
-    <!-- Yggdrasil -->
-      <a class="anchor" id="Yggdrasil"></a>
-      <section class="content content-light">
-          <div class="container">
-              <div class="row">
-                  <div class="col-sm-3">
-                      <img class="img-responsive img-circle center-block" src="images/yggdrasil.png" alt="">
-                  </div>
-                  <div class="col-sm-9">
-                  	<h2 class="section-header">Yggdrasil</h2>
-                  	<p class="lead text-muted">A bot designed to connect as many Discord servers as possible, bringing fun and entertainment. It features several fun "game" commands, a soundboard, and cross-server text and voice chat.</p>
-                  	<a href="https://ygg.fun/invite" class="btn btn-primary">Invite</a>
-                        <a href="https://ygg.fun" class="btn btn-primary">Website</a>  
-                  </div>
-              </div>
-          </div>
-      </section>
-
-  	<!-- Frost -->
-       <a class="anchor" id="Frost"></a>
-       <section class="content content-dark">
-          <div class="container">
-              <div class="row">
-                  <div class="col-sm-9">
-                  	<h2 class="section-header">Frost (Cleverbot)</h2>
-                  	<p class="lead text-muted">An extremely simple Discord Cleverbot. At less than 30 lines, it's not difficult to see how this bot functions. It is very easy to set up your own copy, or you can invite the one that I host.</p>
-                  	<a href="https://github.com/jagrosh/FrostCleverbot" class="btn btn-primary">Github</a>
-                        <a href="https://discordapp.com/oauth2/authorize?client_id=197531129434210304&scope=bot&permissions=3072" class="btn btn-primary">Invite</a>
-                  </div>
-                  <div class="col-sm-3">
-                      <img class="img-responsive img-circle center-block" src="images/frost.png" alt="">
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <!-- JMusicBot -->
-        <a class="anchor" id="Musicbot"></a>
-        <section class="content content-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img class="img-responsive img-circle center-block" src="images/clarity.png" alt="">
-                    </div>
-                    <div class="col-sm-9">
-                    	<h2 class="section-header">JMusicBot</h2>
-                    	<p class="lead text-muted">A fast and efficient Discord music bot with a clean interface that is easy to host yourself. It supports many online media formats, as well as support for basic permissions.</p>
-                    	<a href="https://github.com/jagrosh/MusicBot/wiki/Setup" class="btn btn-primary">Setup</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    	<!-- Selfbot -->
-         <a class="anchor" id="Selfbot"></a>
-         <section class="content content-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                    	<h2 class="section-header">JSelfBot</h2>
-                    	<p class="lead text-muted">A basic Discord selfbot to enhance functionality of your account. Use this bot to quote other members' messages, perform Google searches, or create custom text "emoji" replacements.</p>
-                    	<a href="https://github.com/jagrosh/Selfbot" class="btn btn-primary">Setup</a>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-responsive img-circle center-block" src="images/clyde.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Floppy -->
-          <a class="anchor" id="Floppy"></a>
-          <section class="content content-light">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-sm-3">
-                          <img class="img-responsive img-circle center-block" src="images/floppy.png" alt="">
-                      </div>
-                      <div class="col-sm-9">
-                      	<h2 class="section-header">💾❗</h2>
-                      	<p class="lead text-muted">A 💯% emoji bot that's just for fun. It has a few interesting commands, like an emoji cleverbot and some simple games.</p>
-                      	<a href="https://discordapp.com/oauth2/authorize?&client_id=168682538028630017&scope=bot&permissions=117768" class="btn btn-primary">Invite</a>
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-      	<!-- DADCo -->
-           <a class="anchor" id="DADCo"></a>
-           <section class="content content-dark">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-sm-9">
-                      	<h2 class="section-header">DADCo</h2>
-                      	<p class="lead text-muted">DADCo is a small startup from Rochester, NY, working on bringing electromiography to the consumer market in the form of wearable smart-technology.</p>
-                      	<a href="http://wearedad.co" class="btn btn-primary">Website</a>
-                        <a href="https://discordapp.com/invite/J75N27z " class="btn btn-primary">Discord</a>
-                      </div>
-                      <div class="col-sm-3">
-                          <img class="img-responsive img-circle center-block" src="images/dadco.png" alt="">
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-          <!-- GiveawayBot -->
-            <a class="anchor" id="GiveawayBot"></a>
-            <section class="content content-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img class="img-responsive img-circle center-block" src="images/giveaway.png" alt="">
-                        </div>
-                        <div class="col-sm-9">
-                        	<h2 class="section-header">GiveawayBot</h2>
-                        	<p class="lead text-muted">Hold giveaways on your Discord server quickly and easily! No setup or complicated commands; start holding giveaways today!</p>
-                        	<a href="https://giveawaybot.party/invite" class="btn btn-primary">Invite</a>
-                                <a href="https://giveawaybot.party" class="btn btn-primary">Website</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-    <!-- Promos
-	<div class="container-fluid">
-        <div class="row promo">
-        	<a href="#">
-				<div class="col-md-4 promo-item item-1">
-					<h3>
-						Unleash
-					</h3>
-				</div>
-            </a>
-            <a href="#">
-				<div class="col-md-4 promo-item item-2">
-					<h3>
-						Synergize
-					</h3>
-				</div>
-            </a>
-
-			<a href="#">
-				<div class="col-md-4 promo-item item-3">
-					<h3>
-						Procrastinate
-					</h3>
-				</div>
-            </a>
+        
+        <a class="anchor" id="jdautils"></a>
+        <div class="project">
+            <img src="images/jda.png"/>
+            <h2>JDA-Utilities</h2>
+            <p>JDA-Utilities is a series of tools and utilities for use with JDA (Java Discord API) to assist in bot creation.</p>
+            <a href="https://github.com/JDA-Applications/JDA-Utilities" class="btn"><i class="fab fa-github"></i> Source</a>
         </div>
-    </div><!-- /.container-fluid
-
-	<!-- Content 3
-     <section class="content content-3">
-        <div class="container">
-			<h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Sanity Check</h2>
-			<p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                    <a href="#" class="btn btn-primary btn-lg">Check Now</a>
-            </div>
+        
+        <hr>
+        
+        <h1><i class="fas fa-handshake"></i> Teams and Groups</h1>
+        <p></p>
+        
+        <a class="anchor" id="bcs"></a>
+        <div class="project">
+            <img src="images/bcs.png"/>
+            <h2>Brick City Singers</h2>
+            <p>The Brick City Singers (lovingly known as "BCS") is an all-male a cappella group from the Rochester Institute of Technology. BCS sings all genres of music, from classic rock hits to modern indie songs. I was a member of BCS for five years, singing Tenor 1 as well as performing Vocal Percussion. Throughout my time in the group I also created several arrangements and held position of Business Director.</p>
+            <a href="http://brickcitysingers.org" class="btn"><i class="fas fa-globe"></i> Website</a>
+            <a href="https://www.facebook.com/brickcitysingers" class="btn"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://play.spotify.com/album/0H9EvZdDXMbKEMGrVnKw1X" class="btn"><i class="fab fa-spotify"></i> Bold</a>
         </div>
-    </section>-->
-
-	<!-- Footer -->
-    <footer class="page-footer">
-
-    	<!-- Contact Us
-        <div class="contact">
-        	<div class="container">
-				<h2 class="section-heading">Contact</h2>
-				<p>E-mail<br><a href="mailto:john.a.grosh@gmail.com">john.a.grosh@gmail.com</a></p>
-        <p>Discord Server<br><img src="​https://discordapp.com/api/guilds/147698382092238848/widget.png"></p>
-        	</div>
-        </div>-->
-
-        <!-- Copyright etc -->
-        <div class="small-print">
-        	<div class="container">
-        		<p>Copyright &copy; John A. Grosh 2017</p>
-        	</div>
+        
+        <a class="anchor" id="dadco"></a>
+        <div class="project">
+            <img src="images/dadco.png"/>
+            <h2>DADCo</h2>
+            <p>DADCo is a biofeedback startup I co-founded, working in conjunction with the RIT Innovation Center. DADCo's mission is to bring Electromyography (EMG) into the mainstream consumer marketplace by creating a diverse line of electrode-integrated smart devices and accessories. DADCo received first place in the Destler Health Innovation Challenge for an EMG-controlled wheelchair, designed to help people with neurological disorders get around even if they can't use their hands.</p>
+            <a href="https://www.facebook.com/wearedadco" class="btn"><i class="fab fa-facebook"></i> Facebook</a>
         </div>
-
+        
+        <a class="anchor" id="mhgh"></a>
+        <div class="project">
+            <img src="images/mhgh.png"/>
+            <h2>Monster Hunter Gathering Hall</h2>
+            <p>The Monster Hunter Gathering Hall is a community for fans of CapCom's Monster Hunter game series. I founded the group in 2015, and since then its grown to nearly 40,000 members worldwide.</p>
+            <a href="https://discord.gg/monsterhunter" class="btn"><i class="fab fa-discord"></i> Discord</a>
+            <a href="https://mhgh.info" class="btn"><i class="fas fa-globe"></i> Website</a>
+            <a href="https://twitter.com/MHGatheringHall" class="btn"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+        
+        <hr>
+        
+        <h1><i class="fab fa-discord"></i> Discord Bots</h1>
+        <p>One of my favorite hobbies is creating various bots (and other things) for the online chat service Discord.</p>
+        
+        <a class="anchor" id="spectra"></a>
+        <div class="project">
+            <img src="images/spectra.png"/>
+            <h2>Spectra</h2>
+            <p>A mutli-purpose, for-fun and for-utility Discord bot. Spectra has a complex tag system for a plethora of "custom command" capabilities. Additionally, it sports utilities like reminders, announcements, self-assignable roles, afk notifications, and a full moderation suite including logs.</p>
+            <a href="https://github.com/jagrosh/Spectra/wiki" class="btn"><i class="fab fa-github"></i> Wiki</a>
+        </div>
+        
+        <a class="anchor" id="vortex"></a>
+        <div class="project">
+            <img src="images/vortex.png"/>
+            <h2>Vortex</h2>
+            <p>A moderation and auto-moderation bot with a suite of tools to protect servers from spam and advertisement. Its auto-moderator capabilities also allow it to filter out certain types of behavior without need for human intervention, lightening the load on the server's staff team.</p>
+            <a href="https://github.com/jagrosh/Vortex/wiki" class="btn"><i class="fab fa-github"></i> Wiki</a>
+            <a href="https://github.com/jagrosh/Vortex" class="btn"><i class="fab fa-github"></i> Source</a>
+        </div>
+        
+        <a class="anchor" id="jmusicbot"></a>
+        <div class="project">
+            <img src="images/clarity.png"/>
+            <h2>JMusicBot</h2>
+            <p>A fast and efficient Discord music bot with a clean interface that is easy to host yourself. It supports many online media formats, as well as support for basic permissions.</p>
+            <a href="https://github.com/jagrosh/MusicBot/wiki/Setup" class="btn"><i class="fab fa-github"></i> Setup</a>
+            <a href="https://github.com/jagrosh/MusicBot" class="btn"><i class="fab fa-github"></i> Source</a>
+        </div>
+        
+        <a class="anchor" id="giveawaybot"></a>
+        <div class="project">
+            <img src="images/giveaway.png"/>
+            <h2>GiveawayBot</h2>
+            <p>GiveawayBot lets you hold giveaways on your Discord server quickly and easily! It doesn't require any setup, and is ideal for getting giveaways started quickly and easily.</p>
+            <a href="https://giveawaybot.party/" class="btn"><i class="fas fa-globe"></i> Website</a>
+            <a href="https://giveawaybot.party/invite" class="btn"><i class="fas fa-plus"></i> Invite</a>
+            <a href="https://github.com/jagrosh/GiveawayBot" class="btn"><i class="fab fa-github"></i> Source</a>
+        </div>
+        
+        <a class="anchor" id="yggdrasil"></a>
+        <div class="project">
+            <img src="images/yggdrasil.png"/>
+            <h2>Yggdrasil</h2>
+            <p>A bot designed to connect as many Discord servers as possible, bringing fun and entertainment. It features several fun "game" commands, a soundboard, and cross-server text and voice chat.</p>
+            <a href="https://ygg.fun" class="btn"><i class="fas fa-globe"></i> Website</a>
+            <a href="https://ygg.fun/invite" class="btn"><i class="fas fa-plus"></i> Invite</a>
+            <a href="https://ygg.fun/treehouse" class="btn"><i class="fab fa-discord"></i> Discord</a>
+        </div>
+        
+        <a class="anchor" id="frost"></a>
+        <div class="project">
+            <img src="images/frost.png"/>
+            <h2>Frost</h2>
+            <p>An extremely simple Discord Cleverbot. At less than 30 lines, it's not difficult to see how this bot functions. It is very easy to set up your own copy, or you can invite the one that I host.</p>
+            <a href="https://discordapp.com/oauth2/authorize?client_id=197531129434210304&scope=bot&permissions=3072" class="btn"><i class="fas fa-plus"></i> Invite</a>
+            <a href="https://github.com/jagrosh/FrostCleverbot" class="btn"><i class="fab fa-github"></i> Source</a>
+        </div>
+        
+        <a class="anchor" id="floppy"></a>
+        <div class="project">
+            <img src="images/floppy.png"/>
+            <h2>💾❗</h2>
+            <p>A 💯% emoji bot that's just for fun. It has a few interesting commands, like an emoji cleverbot and some simple games.</p>
+            <a href="https://discordapp.com/oauth2/authorize?&client_id=168682538028630017&scope=bot&permissions=117768" class="btn"><i class="fas fa-plus"></i> Invite</a>
+        </div>
+        
+        <a class="anchor" id="courier"></a>
+        <div class="project">
+            <img src="images/courier.png"/>
+            <h2>Courier Felyne</h2>
+            <p>A matchmaking and profile bot for the Monster Hunter Gathering Hall. This bot helps to manage users' guild cards, keeps track of ranks, and allows players to find others quests!</p>
+            <a href="https://discord.gg/monsterhunter" class="btn"><i class="fab fa-discord"></i> Discord</a>
+        </div>
+    </div>
+    <br>
+    </center>
+    
+    <footer>
+        &copy; 2018 John A. Grosh
     </footer>
-
-    <!-- jQuery -->
+    
     <script src="js/jquery-1.11.3.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Javascript -->
     <script src="js/custom.js"></script>
-
 </body>
 
 </html>

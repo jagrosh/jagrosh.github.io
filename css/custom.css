@@ -60,6 +60,15 @@ header .btn {
     }
 }
 
+.btn-primary {
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border-color: white;
+}
+
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);

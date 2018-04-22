@@ -60,16 +60,6 @@ header .btn {
     }
 }
 
-.btn-primary {
-    border-color: black;
-    border-width: 2px;
-}
-
-.btn-primary:hover, .btn-primary:focus {
-    border-color: white;
-}
-
-
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     background-color: white;
@@ -136,6 +126,16 @@ center {
     background-size: 100% auto, auto;
 }
 
+
+.btn-primary {
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border-color: white;
+}
+
 hr {
     margin: 70px;
     border-color: #888;
@@ -163,8 +163,6 @@ hr {
         max-width: 70%;
     }
 }
-
-
 
 .projects h1 {
     font-weight: bold;
